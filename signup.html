@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    
+      <style>
+        *{
+          padding: 0;
+          margin: 0;
+        }
+        body{
+          background-color: rgb(244, 244, 253);
+        }
+        #form{
+          position: relative;
+          top: 60px;
+          left: 470px;
+          border:  2px solid white;
+          height: 530px;
+          width: 430px;
+          background-color: white;
+          border-radius: 10px;
+          
+        }
+        #icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgb(107, 105, 105);
+          position: relative;
+          
+          left: 180px;
+          font-size: 18px;
+          font-weight: 900;
+          bottom: 30px;
+          
+        }
+        #signup{
+          position: relative;
+          left: 10px;
+          top: 5px;
+          font-weight: 700;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 32px;
+          color: rgb(73, 72, 72);
+        }
+        #h5{
+          position: relative;
+          bottom: 13px;
+          left: 10px;
+          color: rgb(107, 105, 105);
+          font-weight: 400;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 15px;
+        }
+        #div{
+          position: relative;
+          height: 1px;
+          width: 435px;
+          right: 3px;
+          bottom: 5px;
+          background-color: rgb(216, 209, 209);
+        }
+        #name{
+          position: relative;
+          top: 5px;
+          left: 10px;
+          height: 35px;
+          width: 200px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 17px;
+          background: rgb(244, 244, 253);
+        }
+        #Surname{
+          position: relative;
+          bottom: 49px;
+          left: 220px;
+          height: 35px;
+          width: 200px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 17px;
+          background: rgb(244, 244, 253);
+        }
+        #email{
+          position: relative;
+          bottom: 55px;
+          left: 10px;
+          height: 35px;
+          width: 410px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 17px;
+          background: rgb(244, 244, 253);
+          
+        }
+        #password{
+          position: relative;
+          bottom: 59px;
+          left: 10px;
+          height: 35px;
+          width: 410px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 17px;
+          background: rgb(244, 244, 253);
+        }
+        #date{
+          position: relative;
+          bottom: 70px;
+          left: 10px;
+          color: rgb(107, 105, 105);
+          font-weight: 400;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 13px;
+        }
+        #data{
+          position: relative;
+          bottom: 62px;
+          left: 10px;
+          height: 35px;
+          width: 410px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 17px;
+          background: rgb(244, 244, 253);
+        }
+        #gender{
+          position: relative;
+          bottom: 75px;
+          left: 10px;
+          color: rgb(107, 105, 105);
+          font-weight: 400;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #female{
+          position: relative;
+          bottom: 70px;
+          left: 10px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 20px;
+          background: rgb(244, 244, 253);
+          color: rgb(132, 132, 141);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #radio1{
+          position: relative;
+          left: 18px;
+          bottom: 70px;
+        }
+        #male{
+          position: relative;
+          bottom: 96px;
+          left: 170px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 20px;
+          background: rgb(244, 244, 253);
+          color: rgb(132, 132, 141);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #radio2{
+          position: relative;
+          left: 180px;
+          bottom: 96px;
+        }
+        #custom{
+          position: relative;
+          bottom: 121px;
+          left: 310px;
+          border-radius: 3px;
+          border: 1px solid rgb(175, 170, 170);
+          font-size: 20px;
+          background: rgb(244, 244, 253);
+          color: rgb(132, 132, 141);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #radio3{
+          position: relative;
+          left: 320px;
+          bottom: 123px;
+        }
+        #para{
+          position: relative;
+          bottom: 127px;
+          left: 10px;
+          color: rgb(107, 105, 105);
+          font-weight: 600;
+          font-size: 11px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #button{
+          position: relative;
+          bottom: 100px;
+          left: 112px;
+          height: 40px;
+          width: 190px;
+          border: 2px solid rgb(13, 182, 13);
+          color: white;
+          border-radius: 10px;
+          background-color: rgb(13, 182, 13);
+          font-size: 20px;
+          font-weight: 650;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      </style>
+      <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+  />
+
+  
+</head>
+
+<body>
+    <form action="/" method="post" id="form">
+      <h1 id="signup">Sign Up <span id="icon"><i class="ri-close-large-fill"></i></span></h1>
+     <h5 id="h5">It's quick and easy.</h5>
+     <div id="div"></div>
+        <input type="text" name="Firstname" placeholder="First name" id="name"><br><br>
+        <input type="text" name="Surname" placeholder="Surname" id="Surname"><br><br>
+        <input type="email" name="phone" placeholder="Mobile number or email address" id="email"><br><br>
+        <input type="password" name="password" placeholder="New password" id="password"><br><br>
+        <label for="date" name="date" id="date">Date of birth ?</label>
+        <input type="date" name="dateofbirth" placeholder="Date of birth" id="data"><br><br>
+        
+                <label for="Pname" id="gender">gender ?</label><br>
+                <label for="admin" id="female">Female</label>
+                <input type="radio" id="radio1"><br>
+                <label for="engineer" id="male">Male</label>
+                <input type="radio" id="radio2"><br>
+                <label for="manager" id="custom">Custom</label>
+                <input type="radio" id="radio3"><br><br>
+
+        <div id="para">People who use our service may have uploaded your contact information to Facebook. Learn more. <br><br>
+By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time
+        </div>
+
+        <button type="submit" id="button">Sign Up </button>
+
+    </form>
+
+
+</body>
+
+</html>
